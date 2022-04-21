@@ -12,49 +12,56 @@
     <article class="navigation top-navigation">
         <nav>
             <ul class="nav-list">
-                <li class="top-nav-link">
+                <li class="top-nav-item">
                     <a href="#">
                         <span>75th Anniversary Year</span>
                     </a>
                 </li>
-                <li class="top-nav-link">
-                    <a href="#">
-                        <span>Renew</span>
-                    </a>
-                </li>
-                <li class="top-nav-link">
-                    <a href="#">
-                        <span>Subscribe for Email Updates</span>
-                    </a>
-                </li>
-                <li class="top-nav-link">
+                <li class="top-nav-item">
                     <a href="#">
                         <span>Contact</span>
                     </a>
                 </li>
-                <li class="top-nav-link">
+                <li class="top-nav-item">
+                    <a href="#">
+                        <span>Renew</span>
+                    </a>
+                </li>
+                <li class="top-nav-item">
                     <a href="#">
                         <span>Join</span>
                     </a>
                 </li>
-                <li class="top-nav-link">
-                    <form class="nav-search" action="#" method="post">
-                        <input class="nav-text-input" type="text" placeholder="Search" name="search" id="search">
+                <li class="top-nav-item">
+                    <a href="#">
+                        <span>Subscribe for Email Updates</span>
+                    </a>
+                </li>
+                <li class="top-nav-item">
+                    <a class="icon" href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="top-nav-item">
+                    <a class="icon"  href="#">
+                        <i class="fa-brands fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li class="top-nav-item">
+                    <a class="icon" href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="top-nav-item">
+                    <a class="icon last-item show-input-btn" id="show-input-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <form class="nav-search" action="#" method="post" id="search-input-block">
+                        <input class="nav-text-input" type="text" placeholder="Search..." name="search" id="search">
                         <button class="nav-submit-btn" type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </form>
-                </li>
-                <li class="top-nav-link">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter-square"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
                 </li>
             </ul>
         </nav>
@@ -66,17 +73,16 @@
             </a>
             <nav>
                 <ul class="nav-list">
-                    <li class="main-nav-link">
+                    <li class="main-nav-item">
                         <a href="#">
                             <span>Home</span>
                         </a>
                     </li>
                     <li class="dropdown">
-                        <section>
-                            <span>About</span>
+                        <button class="dropbtn" id="dropdown-btn-1">About
                             <i class="fa-solid fa-chevron-down"></i>
-                        </section>
-                        <ul class="dropdown-content">
+                        </button>
+                        <ul class="dropdown-content" id="dropdown-content-1">
                             <li>
                                 <a href="#">
                                     <span>75th Anniversary Year</span>
@@ -119,95 +125,92 @@
                             </li>
                         </ul>
                     </li>
-
                     <li class="dropdown">
-                        <section>
-                            <span>Membership</span>
+                        <button class="dropbtn" id="dropdown-btn-2">Membership
                             <i class="fa-solid fa-chevron-down"></i>
-                        </section>
-                        <ul class="dropdown-content">
+                        </button>
+                        <ul class="dropdown-content" id="dropdown-content-2">
                             <li>
                                 <a href="#">
-                                    <span>Content</span>
+                                    <span>Member Benefits</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>75th Anniversary Year</span>
+                                    <span>Join ACAD</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Who We Are</span>
+                                    <span>Get Involved</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Who We Are</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <section>
-                            <span>Events</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </section>
-                        <ul class="dropdown-content">
-                            <li>
-                                <a href="#">
-                                    <span>75th Anniversary Year</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Who We Are</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Who We Are</span>
+                                    <span>Peer Conferencing Program</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <section>
-                            <span>Resourses</span>
+                        <button class="dropbtn" id="dropdown-btn-3">
+                            Meetings & Events
                             <i class="fa-solid fa-chevron-down"></i>
-                        </section>
-                        <ul class="dropdown-content">
+                        </button>
+                        <ul class="dropdown-content" id="dropdown-content-3">
                             <li>
                                 <a href="#">
-                                    <span>Content</span>
+                                    <span>Annual Meeting</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Content</span>
+                                    <span>Conferences</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>75th Anniversary Year</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Who We Are</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Who We Are</span>
+                                    <span>Deans’ Institute</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="main-nav-link">
+                    <li class="dropdown">
+                        <button class="dropbtn" id="dropdown-btn-4">
+                            Resources
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-content" id="dropdown-content-4">
+                            <li>
+                                <a href="#">
+                                    <span>ACAD Reading List</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Explore Resources</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>The Resource Handbook for Academic Deans</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>The ACAD Leader</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Partners</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-item">
                         <a  href="#">
-                            <span>Career Center</span>
+                            <span>Career Center <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                         </a>
                     </li>
                 </ul>
@@ -215,5 +218,70 @@
         </article>
     </header>
     <script src="https://kit.fontawesome.com/c39ec778aa.js" crossorigin="anonymous"></script>
+    <script>
+
+        const showInputBtn = document.getElementById("show-input-btn")
+        const searchInputBlock = document.getElementById("search-input-block")
+
+        const dropDownButton1 = document.getElementById("dropdown-btn-1")
+        const dropDownContent1 = document.getElementById("dropdown-content-1")
+
+        const dropDownButton2 = document.getElementById("dropdown-btn-2")
+        const dropDownContent2 = document.getElementById("dropdown-content-2")
+
+        const dropDownButton3 = document.getElementById("dropdown-btn-3")
+        const dropDownContent3 = document.getElementById("dropdown-content-3")
+
+        const dropDownButton4 = document.getElementById("dropdown-btn-4")
+        const dropDownContent4 = document.getElementById("dropdown-content-4")
+
+        showInputBtn.addEventListener('click', (e)=>{
+            searchInputBlock.classList.toggle("show");
+        })
+
+        dropDownButton1.addEventListener('click', (e)=>{
+            dropDownContent2.classList.remove('show');
+            dropDownContent3.classList.remove('show');
+            dropDownContent4.classList.remove('show');
+            dropDownContent1.classList.toggle("show");
+        })
+
+        dropDownButton2.addEventListener('click', (e)=>{
+            dropDownContent1.classList.remove('show');
+            dropDownContent3.classList.remove('show');
+            dropDownContent4.classList.remove('show');
+            dropDownContent2.classList.toggle("show");
+        })
+
+        dropDownButton3.addEventListener('click', (e)=>{
+            dropDownContent1.classList.remove('show');
+            dropDownContent2.classList.remove('show');
+            dropDownContent4.classList.remove('show');
+            dropDownContent3.classList.toggle("show");
+        })
+
+        dropDownButton4.addEventListener('click', (e)=>{
+            dropDownContent1.classList.remove('show');
+            dropDownContent3.classList.remove('show');
+            dropDownContent2.classList.remove('show');
+            dropDownContent4.classList.toggle("show");
+        })
+
+        function hideDropDown(e) {
+            console.log(e.target);
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.querySelectorAll(".dropdown-content");
+            myDropdown.forEach(item =>{
+                if (item.classList.contains('show')) {
+                    item.classList.remove('show');
+                }
+            })
+            }
+        }
+
+        window.onclick = function(e) {
+            hideDropDown(e)
+        }
+    </script>        
 </body>
 </html>

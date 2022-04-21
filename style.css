@@ -10,6 +10,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 body{
+    background: #edf3f9;
+    padding: 0 240px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,64 +20,77 @@ a{
 }
 
 .navigation{
-    padding: 1rem 60px;
+    /* padding: 1rem 60px; */
     display: flex;
 }
 .navigation nav{
     width: 100%;
 }
-.navigation nav .nav-list{
-    display: flex;
-    justify-content: space-evenly;
-}
-.logo-link{
-    width: 15%;
-}
+
 /* TOP NAVIGATION MENU */
 
 .top-navigation{
-    background-color: rgb(35, 117, 126);
+    background-color: #43667c;
 }
 
 .top-navigation nav .nav-list{
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.top-navigation nav .nav-list .top-nav-link a{
-    transition: .5s;
-    font-weight: 500;
-    color: white;
+.top-navigation nav .nav-list .top-nav-item a{
+  font-weight: 100;
+  font-size: 13px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 6px 12px;
+  text-decoration: none;
 }
 
-.top-navigation nav .nav-list .top-nav-link a:hover{
-    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+.top-navigation nav .nav-list .top-nav-item a:hover{
+    background-color: #d8770e;
 }
 
-.top-navigation nav .nav-list .top-nav-link a:active{
+.top-navigation nav .nav-list .top-nav-item a:active{
     opacity: .75;
 }
 
-.top-navigation nav .nav-list .top-nav-link a i{
-    font-size: 1.5rem;
-    margin-left: 10px;
+.top-navigation nav .nav-list .top-nav-item .icon{
+    font-size: 15px;
+    padding: 6px 8px;
+}
+
+.top-navigation nav .nav-list .top-nav-item .last-item{
+    padding: 6px 22px 6px 12px;
+}
+
+.top-navigation nav .nav-list .top-nav-item .last-item:hover{
+    background-color: #d8770e;
 }
 
 .nav-search{
-    border-radius: 5px;
+    transform: translateX(-93px);
+    box-shadow: 0 10px 10px rgb(0 0 0/15%);
     background: white;
-    padding: 5px;
+    padding: 14px 10px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
 }
 
 .nav-search .nav-text-input{
-    border:none;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 5px;
-    outline: none;
-    font-size: 1rem;
+    border: none;
+    width: 85px;
 }
 
 .nav-search .nav-submit-btn{
+    color: #44667c;
     cursor: pointer;
     border:none;
     background-color: rgba(255, 255, 255, 0);
@@ -83,31 +98,35 @@ a{
 }
 
 /* MAIN NAVIGATION MENU */
+.main-navigation{
+    padding: 25px 35px 4px;
+    background-color: white;
+
+}
+
 .main-navigation nav{
-    padding-left: 2rem;
     display: flex;
+    justify-content: flex-end;
 }
 
 .main-navigation nav .nav-list{
-    width: 100%;
     display: flex;
     align-items: center;
 }
 
-.main-navigation nav .nav-list .main-nav-link{
-    font-size: 1.25rem;
+.main-navigation nav .nav-list .main-nav-item{
+    cursor: pointer;
+    font-size: 15px;
     font-weight: 700;
 }
 
-.main-navigation nav .nav-list .main-nav-link a{
+.main-navigation nav .nav-list .main-nav-item a{
+    display: flex;
+    padding: 15px 7px;
     color: black;
 }
 
-.main-navigation nav .nav-list .main-nav-link a:hover{
-    text-shadow: rgb(35, 117, 126) 1px 0 10px;
-}
-
-.main-navigation nav .nav-list .main-nav-link a:active{
+.main-navigation nav .nav-list .main-nav-item a:active{
     opacity: .5;
 }
 
@@ -117,14 +136,21 @@ a{
     display: inline-block;
   }
 
-  .dropdown section{
-    padding: 12px 16px;
-    font-size: 1.25rem;
+  .dropdown .dropbtn{
+    padding: 15px 7px;
+    font-size: 15px;
     font-weight: 700;
-    cursor: default;
+    cursor: pointer;
+    background-color: white;
+    border: none;
   }
-  
+
+  .dropbtn > i {
+    pointer-events: none;
+  }
+
   .dropdown-content {
+    width: 230px;
     display: none;
     position: absolute;
     min-width: 160px;
@@ -135,9 +161,9 @@ a{
   }
   
   .dropdown-content a {
-      color: rgb(38, 172, 187);
-      font-size: 1rem;
-      font-weight: 300;
+    color: #44667c;
+    font-size: 1rem;
+    font-weight: 700;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -145,5 +171,6 @@ a{
   
   .dropdown-content a:hover {color:#d8770e ;}
   
-  .dropdown:hover .dropdown-content {
-  display: block;}
+  .show {
+    display: block;
+  }
